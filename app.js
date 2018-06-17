@@ -32,7 +32,7 @@ if (settings.heavy != true) {
     'getmasternodecount',
     'getmasternodecountonline',
     'masternode',
-    'masternodelist',
+    'listmasternodes',
   ]);
 } else {
   // enable additional heavy api calls

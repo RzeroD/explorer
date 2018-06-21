@@ -12,9 +12,13 @@ block content
               .panel-heading
                 strong #{settings.locale.coininfo_basicinfo}
               .panel-body
-                each item in coininfo.basic_info_links
-                  a(href="#{item[1]}", target="_blank") #{item[0]}
-                  <br>
+                table
+                  each item in coininfo.basic_info_links
+                    tr
+                      td(align="center")
+                        span(class="fa #{item[2]}")
+                      td.click
+                        a(href="#{item[1]}", target="_blank")  #{item[0]}
           .col-md-9
             .panel.panel-default
               .panel-body.text-center
@@ -81,8 +85,3 @@ block content
                   .row.earnings
                     .col-md-offset-5.text-left
                       em Calculations are based on real masternode payment data over the last 24h.
-
-
-
-
-

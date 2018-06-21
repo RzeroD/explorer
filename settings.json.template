@@ -147,18 +147,18 @@
   },
 
 
-  // Coin info page
+  // Coin info page, example: ["text", "URL", "fa-code"]
   "coininfo": {
     "basic_info_links": [
-      ["Main page", "http://www.heliumpay.com/"],
-      ["HeliumLabs", "http://heliumlabs.org/"],
-      ["BitcoinTalk", "https://bitcointalk.org/index.php?topic=1809278.0"],
-      ["Forum", "https://forum.heliumlabs.org/"],
-      ["Telegram", "https://t.me/HeliumChain"],
-      ["Slack", "https://onetrollbox.slack.com"],
-      ["Slack (Inv.)", "https://heliumslack.herokuapp.com/"],
-      ["Facebook", "https://bitcointalk.org/index.php?topic=1809278.0"],
-      ["Twitter", "https://twitter.com/HeliumChain"]
+      ["Main page", "http://www.heliumpay.com/","fa-home"],
+      ["HeliumLabs", "http://heliumlabs.org/","fa-flask"],
+      ["BitcoinTalk", "https://bitcointalk.org/index.php?topic=1809278.0","fa-bitcoin"],
+      ["Forum", "https://forum.heliumlabs.org/","fa-comments"],
+      ["Telegram", "https://t.me/HeliumChain","fa-telegram"],
+      ["Slack", "https://onetrollbox.slack.com","fa-slack"],
+      ["Slack (Auto-Invite)", "https://heliumslack.herokuapp.com/","fa-list"],
+      ["Facebook", "https://bitcointalk.org/index.php?topic=1809278.0","fa-facebook"],
+      ["Twitter", "https://twitter.com/HeliumChain","fa-twitter"]
     ],
     "masternode_required": 1000,
     "block_time_sec": 120,

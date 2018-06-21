@@ -28,7 +28,7 @@ html
         $('##{active}').addClass('active');
         function update_stats(){   
           $.ajax({url: '/ext/summary', success: function(json){
-            $("#supply").text(json.data[0].supply);
+            $("#supply").text(json.data[0].supply + " #{settings.symbol}");
             $("#difficulty").text(json.data[0].difficulty);
             $("#masternodeCount").text(json.data[0].masternodeCount);
             $("#masternodeOnlineCount").text(json.data[0].masternodeOnlineCount);
@@ -264,9 +264,10 @@ html
     .navbar.navbar-default.navbar-fixed-bottom.hidden-xs
       .col-md-4
         ul.nav
-          li.text-center(style='margin-left:80px;margin-right:80px;')
+          li.text-left(style='margin-left:80px;margin-right:80px;')
             p(style='margin-top:15px;') 
-              a.navbar-link(href='https://github.com/iquidus/explorer', target='_blank') Powered by Iquidus Explorer 
+              a.navbar-link(title='Powered by Iquidus Explorer', href='https://github.com/iquidus/explorer', target='_blank') ⚡
+              a.navbar-link(title='Modded by Helium', href='https://github.com/heliumpay', target='_blank') 🔧
    
       span.connections
         label#lblBlockcount.label.label-default

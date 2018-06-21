@@ -23,7 +23,7 @@ block content
               if (json.data[i]['lastpaid'])
                 json.data[i]['lastpaid'] = new Date((json.data[i]['lastpaid']) * 1000).toLocaleString();
               else
-                json.data[i]['lastpaid'] = '<em>not available</em>';
+                json.data[i]['lastpaid'] = '<em>No payments yet</em>';
             }
             return json.data;
           }

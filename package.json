@@ -8,7 +8,9 @@
     "index-update": "node --stack-size=10000 scripts/sync.js index update",
     "cmc-update": "node --stack-size=10000 scripts/sync.js cmc",
     "stop": "kill -2 $(cat tmp/cluster.pid)",
-    "test": "node ./node_modules/jasmine/bin/jasmine.js"
+    "test": "node ./node_modules/jasmine/bin/jasmine.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -29,10 +31,12 @@
     "morgan": "~1.9.0",
     "qr-image": "~3.2.0",
     "request": "2.85.0",
-    "static-favicon": "~2.0.0-alpha"
+    "static-favicon": "~2.0.0-alpha",
+    "snyk": "^1.88.4"
   },
   "devDependencies": {
     "jasmine": "~3.1.0",
     "nodemon": "^1.12.1"
-  }
+  },
+  "snyk": true
 }

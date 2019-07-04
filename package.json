@@ -10,7 +10,8 @@
     "stop": "kill -2 $(cat tmp/cluster.pid)",
     "test": "node ./node_modules/jasmine/bin/jasmine.js",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -32,7 +33,7 @@
     "qr-image": "~3.2.0",
     "request": "2.85.0",
     "static-favicon": "~2.0.0-alpha",
-    "snyk": "^1.88.4"
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "jasmine": "~3.1.0",

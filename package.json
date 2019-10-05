@@ -32,7 +32,7 @@
     "qr-image": "~3.2.0",
     "request": "2.85.0",
     "static-favicon": "~2.0.0-alpha",
-    "snyk": "^1.88.4"
+    "snyk": "^1.231.0"
   },
   "devDependencies": {
     "jasmine": "~3.1.0",

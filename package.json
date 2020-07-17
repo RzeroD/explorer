@@ -30,7 +30,7 @@
     "mongoose": "5.1.0",
     "morgan": "~1.9.0",
     "qr-image": "~3.2.0",
-    "request": "2.85.0",
+    "request": "2.88.0",
     "static-favicon": "~2.0.0-alpha",
     "snyk": "^1.88.4"
   },
